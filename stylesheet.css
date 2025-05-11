@@ -1,6 +1,9 @@
-body {
-  font-family: "Vazirmatn", sans-serif;
+@import "tailwindcss";
+
+* {
+  font-family: "Vazirmatn", sans-serif !important;
 }
+
 #nav-icon {
   width: 24px;
   height: 16px;
