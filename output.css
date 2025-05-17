@@ -619,6 +619,21 @@
       gap: 5%;
     }
   }
+  .md\:gap-\[7\%\] {
+    @media (width >= 48rem) {
+      gap: 7%;
+    }
+  }
+  .md\:gap-\[7g\%\] {
+    @media (width >= 48rem) {
+      gap: 7g%;
+    }
+  }
+  .md\:gap-\[8\%\] {
+    @media (width >= 48rem) {
+      gap: 8%;
+    }
+  }
   .md\:px-\[0\.625rem\] {
     @media (width >= 48rem) {
       padding-inline: 0.625rem;
