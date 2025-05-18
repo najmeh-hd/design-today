@@ -216,6 +216,9 @@
   .order-2 {
     order: 2;
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .m-\[3\.125rem\] {
     margin: 3.125rem;
   }
@@ -341,6 +344,9 @@
   .flex-row {
     flex-direction: row;
   }
+  .place-items-center {
+    place-items: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -443,6 +449,9 @@
   .p-\[1\.25rem\] {
     padding: 1.25rem;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-\[0\.625rem\] {
     padding-inline: 0.625rem;
   }
@@ -457,6 +466,9 @@
   }
   .px-\[15\] {
     padding-inline: 15;
+  }
+  .px-\[20px\] {
+    padding-inline: 20px;
   }
   .px-\[30px\] {
     padding-inline: 30px;
