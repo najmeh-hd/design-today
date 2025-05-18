@@ -326,6 +326,12 @@
   .list-disc {
     list-style-type: disc;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .grid-rows-4 {
     grid-template-rows: repeat(4, minmax(0, 1fr));
   }
@@ -715,6 +721,11 @@
           background-color: #d84315;
         }
       }
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 }
