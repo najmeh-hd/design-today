@@ -1,3 +1,9 @@
+// import Swiper from "swiper";
+// import "swiper/css";
+
+// import "swiper/css/pagination";
+// import { Pagination } from "swiper/modules";
+
 document.addEventListener("DOMContentLoaded", function () {
   const icons = document.querySelectorAll("#nav-icon");
 
@@ -16,8 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
     sidebar.classList.toggle("active");
   });
 });
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
+
+// const swiper = new Swiper(".mySwiper", {
+//   modules: [Pagination],
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
