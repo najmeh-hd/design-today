@@ -16,3 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     sidebar.classList.toggle("active");
   });
 });
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

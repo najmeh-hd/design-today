@@ -87,6 +87,26 @@
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  display: flex !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  line-height: 32px !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000000 !important;
+  opacity: unset !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #042FF8 !important;
+  box-shadow: 0 0 3px 4px rgba(4, 47, 248, 0.2) !important;
 }

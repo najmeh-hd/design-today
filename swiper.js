@@ -1,6 +1,5 @@
 import Swiper from "swiper";
 import "swiper/css";
-import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 const swiper = new Swiper(".swiper", {
@@ -8,6 +7,6 @@ const swiper = new Swiper(".swiper", {
   direction: "vertical",
   loop: true,
   pagination: {
-  el: ".swiper-pagination",
+    el: ".swiper-pagination",
   },
 });

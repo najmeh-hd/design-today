@@ -3,11 +3,12 @@
   <head>
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="main.js"></script>
-    <script src="swiper.js"></script>
+    <!-- <script src="swiper.js"></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn/index.css" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body class="flex justify-center flex-col items-center px-[1.25rem]">
@@ -209,32 +210,63 @@
         </div>
       </section>
 
-      <section class="mt-[6.25rem] w-full">
-        <div class="flex flex-col justify-center items-center gap-10 mx-12">
-          <img src="assets\images\mona-salehi.png" alt="mona-salehi" />
-          <div class="flex flex-col gap-3.5 items-center">
-            <p class="text-[16px] text-[#333333]">
-              از همکاری با آژانس شما بسیار راضی هستم. تیم طراحی شما بسیار حرفه‌ای و باتجربه هستند. وب سایت من بسیار جذاب
-              و کاربرپسند است. بازدیدکنندگان به راحتی می‌توانند اطلاعات مورد نیاز خود را در آن پیدا کنند. همچنین وب سایت
-              من به خوبی با دستگاه‌های مختلف سازگار است.
-            </p>
-            <p class="text-[24px] text-[#042FF8] font-bold">مونا صالحی</p>
-            <p class="text-[16px] text-[#999999]">پزشک متخصص</p>
-          </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="swiper">
+      <section class="w-full mt-16">
+        <div class="swiper mySwiper h-145 w-90 md:w-full md:h-80">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+              <div class="flex flex-col justify-center items-center gap-10 px-5 swiper-slide md:flex-row md:px-25">
+                <img src="assets\images\mona-salehi.png" alt="mona-salehi" />
+                <div class="flex flex-col gap-3.5 items-center md:items-start">
+                  <p class="text-[16px] text-[#333333]">
+                    از همکاری با آژانس شما بسیار راضی هستم. تیم طراحی شما بسیار حرفه‌ای و باتجربه هستند.<br> وب سایت من
+                    بسیار جذاب و کاربرپسند است. بازدیدکنندگان به راحتی می‌توانند اطلاعات مورد نیاز خود را در آن پیدا
+                    کنند. همچنین وب سایت من به خوبی با دستگاه‌های مختلف سازگار است.
+                  </p>
+                  <p class="text-[24px] text-[#042FF8] font-bold">مونا صالحی</p>
+                  <p class="text-[16px] text-[#999999]">پزشک متخصص</p>
+                </div>
+              </div>
+            
+              <div class="flex flex-col justify-center items-center gap-10 px-5 swiper-slide">
+                <img src="assets\images\mona-salehi.png" alt="mona-salehi" />
+                <div class="flex flex-col gap-3.5 items-center">
+                  <p class="text-[16px] text-[#333333]">
+                    از همکاری با آژانس شما بسیار راضی هستم. تیم طراحی شما بسیار حرفه‌ای و باتجربه هستند. <br>وب سایت من
+                    بسیار جذاب و کاربرپسند است. بازدیدکنندگان به راحتی می‌توانند اطلاعات مورد نیاز خود را در آن پیدا
+                    کنند. همچنین وب سایت من به خوبی با دستگاه‌های مختلف سازگار است.
+                  </p>
+                  <p class="text-[24px] text-[#042FF8] font-bold">مونا صالحی</p>
+                  <p class="text-[16px] text-[#999999]">پزشک متخصص</p>
+                </div>
+              </div>
+            
+              <div class="flex flex-col justify-center items-center gap-10 px-5 swiper-slide">
+                <img src="assets\images\mona-salehi.png" alt="mona-salehi" />
+                <div class="flex flex-col gap-3.5 items-center">
+                  <p class="text-[16px] text-[#333333]">
+                    از همکاری با آژانس شما بسیار راضی هستم. تیم طراحی شما بسیار حرفه‌ای و باتجربه هستند. <br>وب سایت من
+                    بسیار جذاب و کاربرپسند است. بازدیدکنندگان به راحتی می‌توانند اطلاعات مورد نیاز خود را در آن پیدا
+                    کنند. همچنین وب سایت من به خوبی با دستگاه‌های مختلف سازگار است.
+                  </p>
+                  <p class="text-[24px] text-[#042FF8] font-bold">مونا صالحی</p>
+                  <p class="text-[16px] text-[#999999]">پزشک متخصص</p>
+                </div>
+              </div>
+            
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination absolute"></div>
         </div>
       </section>
 
-      <div class="h-[100px]"></div>
+      <div class="h-[1000px]"></div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
