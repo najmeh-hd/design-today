@@ -68,11 +68,6 @@ function updateCountdown() {
     .padStart(2, "0")} : `;
   document.getElementById("seconds").innerText = toPersianDigits(seconds);
 
-
-  // const text = `${days.toString().padStart(2, "0")}  ${hours.toString().padStart(2, "0")} : ${minutes
-  //   .toString()
-  //   .padStart(2, "0")} : ${seconds.toString().padStart(2, "0")}`;
-  // document.getElementById("countdown").innerText = toPersianDigits(text);
 }
 
 setInterval(updateCountdown, 1000);
@@ -87,8 +82,6 @@ function submitForm() {
     return;
   }
 
-  // نمایش کد تخفیف
-  alert(`${name} عزیز، کد تخفیف شما: OFF50`);
+  alert(`${name} عزیز کد تخفیف شما به شماره ${phone} ارسال شد.`);
 
-  // می‌تونی اینجا اطلاعات رو به سرور هم بفرستی
 }

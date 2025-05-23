@@ -121,7 +121,7 @@
           </p>
           <a href="#" class="w-full"
             ><button
-              class="w-full h-[3rem] bg-[#FF5722] text-white rounded-[0.5rem] md:max-w-[10rem] cursor-pointer md:hover:bg-[#d84315]"
+              class="w-full h-[3rem] bg-[#FF5722] text-white rounded-[0.5rem] md:max-w-[10rem] cursor-pointer hover:bg-[#d84315]"
             >
               اطلاعات بیشتر
             </button></a
@@ -266,18 +266,24 @@
           برای استفاده از تخفیف ویژه طراحی سایت فقط تا قبل از اتمام زمان زیر فرصت دارید. اطلاعات خواسته شده رو وارد کنید
           و منتظر تماس ما باشید.
         </p>
-        <div class="grid grid-cols-4 place-items-center gap-0 timer [unicode-bidi:plaintext] text-[48px] font-bold text-[#333333]" id="countdown">
-          <div id="days" class="order-4 w-23 h-18 text-center"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm"></div></div>
-          <div id="hours" class="order-3 w-23 h-18 text-center"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm"></div></div>
-          <div id="minutes" class="order-2 w-23 h-18 text-center"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm"></div></div>
-          <div id="seconds" class="order-1 w-23 h-18 text-center"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm"></div></div>
+        <div class="grid grid-cols-4 place-items-center mt-6 timer [unicode-bidi:plaintext] text-[48px] font-bold text-[#333333] md:gap-8" id="countdown">
+          <div id="days" class="order-4 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
+          <div id="hours" class="order-3 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
+          <div id="minutes" class="order-2 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
+          <div id="seconds" class="order-1 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
           <p class="text-[16px] text-[#999999] order-8 w-22 text-center">روز</p>
           <p class="text-[16px] text-[#999999] order-7 w-22 text-center">ساعت</p>
           <p class="text-[16px] text-[#999999] order-6 w-22 text-center">دقیقه</p>
           <p class="text-[16px] text-[#999999] order-5 w-22 text-center">ثانیه</p>
         </div>
 
-        
+        <div class="flex flex-col justify-center items-center gap-3 w-full mt-10 md:flex-row">
+          <input type="text" id="phone" class="w-full text-[#999999] text-center h-[3rem] border border-solid border-[#999999] rounded-[0.5rem] md:text-start md:px-3" placeholder="شماره تماس">
+          <input type="text" id="name" placeholder="نام شما" class="w-full text-[#999999] text-center h-[3rem] border border-solid border-[#999999] rounded-[0.5rem] md:text-start md:px-3">
+          <button onclick="submitForm()" class="w-full bg-[#FF5722] h-[3rem] text-white rounded-[0.5rem] cursor-pointer md:hover:bg-[#d84315] md:max-w-[10rem]">دریافت تخفیف</button>
+        </div>
+
+
       </section>
 <div class="h-[100px]"></div>
     </main>
