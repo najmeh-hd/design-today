@@ -107,6 +107,16 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #042FF8 !important;
+  background-color: #042ff8 !important;
   box-shadow: 0 0 3px 4px rgba(4, 47, 248, 0.2) !important;
+}
+
+.filter {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(100%) saturate(6547%) hue-rotate(238deg) brightness(94%)
+    contrast(107%);
+  transition: filter 0.2s;
+}
+
+.icon-a:hover .filter {
+filter: unset;
 }

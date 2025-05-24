@@ -60,12 +60,12 @@ function updateCountdown() {
 
   const minutes = `${Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
     .toString()
-    .padStart(2, "0")} : `;
+    .padStart(2, "0")}`;
   document.getElementById("minutes").innerText = toPersianDigits(minutes);
 
   const seconds = `${Math.floor((distance % (1000 * 60)) / 1000)
     .toString()
-    .padStart(2, "0")} : `;
+    .padStart(2, "0")}`;
   document.getElementById("seconds").innerText = toPersianDigits(seconds);
 
 }

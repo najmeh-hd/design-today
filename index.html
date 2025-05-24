@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="package\swiper-bundle.min.css" />
   </head>
 
-  <body class="flex justify-center flex-col items-center px-[1.25rem]">
-    <main class="flex flex-col max-w-md w-full items-center md:max-w-7xl">
+  <body class="flex justify-center flex-col items-center">
+    <main class="flex flex-col max-w-md w-full px-[1.25rem] items-center md:max-w-7xl">
       <nav class="absolute right-0">
         <div id="nav-icon" class="absolute top-0 right-0 z-150 md:hidden">
           <span></span>
@@ -255,7 +255,7 @@
         </div>
       </section>
 
-      <section class="flex flex-col justify-center items-center gap-3 mt-[100px]">
+      <section class="flex flex-col justify-center items-center max-w-7xl gap-3 mt-[100px]">
         <div
           class="flex flex-col justify-center items-center md:flex-row text-[32px] font-black md:text-[40px] md:gap-2"
         >
@@ -266,27 +266,129 @@
           برای استفاده از تخفیف ویژه طراحی سایت فقط تا قبل از اتمام زمان زیر فرصت دارید. اطلاعات خواسته شده رو وارد کنید
           و منتظر تماس ما باشید.
         </p>
-        <div class="grid grid-cols-4 place-items-center mt-6 timer [unicode-bidi:plaintext] text-[48px] font-bold text-[#333333] md:gap-8" id="countdown">
-          <div id="days" class="order-4 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
-          <div id="hours" class="order-3 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
-          <div id="minutes" class="order-2 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
-          <div id="seconds" class="order-1 w-23 h-23 text-center md:text-[72px] md:w-40 md:h-30"><div class="w-18 h-18 bg-gray-400 animate-pulse rounded-sm md:w-40 md:h-30"></div></div>
-          <p class="text-[16px] text-[#999999] order-8 w-22 text-center">روز</p>
-          <p class="text-[16px] text-[#999999] order-7 w-22 text-center">ساعت</p>
-          <p class="text-[16px] text-[#999999] order-6 w-22 text-center">دقیقه</p>
-          <p class="text-[16px] text-[#999999] order-5 w-22 text-center">ثانیه</p>
+        <div
+          class="grid grid-cols-7 place-items-center mt-6 w-full [unicode-bidi:plaintext] font-bold text-[#333333] md:gap-8"
+          id="countdown"
+        >
+          <div id="seconds" class="text-[48px] text-center md:text-[72px] md:min-w-24">
+            <div class="w-18 h-18 bg-gray-400 animate-pulse md:w-24 rounded-sm"></div>
+          </div>
+          <div class="text-[48px] md:text-[72px]">:</div>
+          <div id="minutes" class="text-[48px] text-center md:text-[72px] md:min-w-24">
+            <div class="w-18 h-18 bg-gray-400 animate-pulse md:w-24 rounded-sm"></div>
+          </div>
+          <div class="text-[48px] md:text-[72px]">:</div>
+          <div id="hours" class="text-[48px] text-center md:text-[72px] md:min-w-24">
+            <div class="w-18 h-18 bg-gray-400 animate-pulse md:w-24 rounded-sm"></div>
+          </div>
+          <div class="text-[48px] md:text-[72px]"></div>
+          <div id="days" class="text-[48px] text-center md:text-[72px] md:min-w-24">
+            <div class="w-18 h-18 bg-gray-400 animate-pulse md:w-24 rounded-sm"></div>
+          </div>
+          <p class="text-[16px] text-[#999999] w-22 text-center">ثانیه</p>
+          <div></div>
+          <p class="text-[16px] text-[#999999] w-22 text-center">دقیقه</p>
+          <div></div>
+          <p class="text-[16px] text-[#999999] w-22 text-center">ساعت</p>
+          <div></div>
+          <p class="text-[16px] text-[#999999] w-22 text-center">روز</p>
         </div>
 
         <div class="flex flex-col justify-center items-center gap-3 w-full mt-10 md:flex-row">
-          <input type="text" id="phone" class="w-full text-[#999999] text-center h-[3rem] border border-solid border-[#999999] rounded-[0.5rem] md:text-start md:px-3" placeholder="شماره تماس">
-          <input type="text" id="name" placeholder="نام شما" class="w-full text-[#999999] text-center h-[3rem] border border-solid border-[#999999] rounded-[0.5rem] md:text-start md:px-3">
-          <button onclick="submitForm()" class="w-full bg-[#FF5722] h-[3rem] text-white rounded-[0.5rem] cursor-pointer md:hover:bg-[#d84315] md:max-w-[10rem]">دریافت تخفیف</button>
+          <input
+            type="text"
+            id="phone"
+            class="w-full text-[#333333] text-center h-[3rem] border border-solid border-[#999999] focus:!border-[#d84315] rounded-[0.5rem] md:text-start md:px-3"
+            placeholder="شماره تماس"
+          />
+          <input
+            type="text"
+            id="name"
+            placeholder="نام شما"
+            class="w-full text-[#333333] text-center h-[3rem] border border-solid border-[#999999] focus:!border-[#d84315] rounded-[0.5rem] md:text-start md:px-3"
+          />
+          <button
+            onclick="submitForm()"
+            class="w-full bg-[#FF5722] h-[3rem] text-white rounded-[0.5rem] cursor-pointer hover:bg-[#d84315] md:max-w-[10rem]"
+          >
+            دریافت تخفیف
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-col gap-2 md:flex-row text-[32px] mt-20 justify-center items-center font-black">
+          <p class="text-[#333333]">نمونه کارهای</p>
+          <p class="text-[#042FF8]">طراحی سایت</p>
+        </div>
+        <div class="grid grid-cols-1 w-full mt-10 md:grid-cols-4 gap-6">
+          <div><img src="assets\images\sample-project1.png" alt="sample-projrct1" /></div>
+          <div><img src="assets\images\sample-project2.png" alt="sample-projrct2" /></div>
+          <div><img src="assets\images\sample-project3.png" alt="sample-projrct3" /></div>
+          <div><img src="assets\images\sample-project4.png" alt="sample-projrct4" /></div>
+          <div class="hidden md:block"><img src="assets\images\sample-project5.png" alt="sample-projrct5" /></div>
+          <div class="hidden md:block"><img src="assets\images\sample-project6.png" alt="sample-projrct6" /></div>
+          <div class="hidden md:block"><img src="assets\images\sample-project7.png" alt="sample-projrct7" /></div>
+          <div class="hidden md:block"><img src="assets\images\sample-project8.png" alt="sample-projrct8" /></div>
+        </div>
+      </section>
+
+      <section
+        class="relative grid mt-[5.125rem] gap-[3.25rem] md:grid-cols-2 md:gap-[1%] md:mt-[8.25rem] md:px-[1.25rem]"
+      >
+        <div class="flex grid-span-1 justify-center items-center w-full order-1 md:order-2">
+          <img src="assets\images\help.png" alt="help" class="w-full max-w-[28.125rem] md:max-w-[37.5rem]" />
         </div>
 
+        <div
+          class="flex flex-col justify-center items-center gap-[1.25rem] text-[#333333] md:items-start md:gap-[1.25rem] md:py-[2.5rem] order-2 md:order-1"
+        >
+          <p class="text-[2.5rem] text-center font-black px-[0.625rem] md:text-right md:text-[3rem]">
+            نیاز به <span class="text-[#042FF8]">راهنمایی </span>بیشتر دارید؟
+          </p>
+          <p class="text-[#999999]">
+            ما همیشه آماده کمک هستیم. کافیه یکی از روش‌های ارتباطی زیر رو انتخاب کنید. تیم پشتیبانی در سریعترین زمان
+            ممکن با شما ارتباط می‌گیرن.
+          </p>
 
+          <div class="flex flex-col gap-3 md:mt-5">
+            <a
+              href="02188102080"
+              class="flex flex-row-reverse gap-12 items-center justify-between px-4 py-2 bg-[#EEF1FF] text-[#042Ff8] text-[14px] rounded-full"
+            >
+              <span class="tracking-widest">۸۸۱۰۲۰۸۰ - ۰۲۱</span>
+              <img src="assets\icons\phone-flip.svg" />
+            </a>
+
+            <a
+              href="mailto:Info@Gmail.com"
+              class="flex flex-row-reverse gap-6 items-center justify-between px-4 py-2 bg-[#EEF1FF] text-[#042Ff8] text-[14px] rounded-full"
+            >
+              <span class="tracking-widest">Info@Gmail.com</span>
+              <img src="assets\icons\envelope.svg" />
+            </a>
+
+            <a
+              href="https://instagram.com/HappyAgency"
+              target="_blank"
+              class="flex flex-row-reverse gap-12 items-center justify-between px-4 py-2 bg-[#EEF1FF] text-[#042Ff8] text-[14px] rounded-full"
+            >
+              <span class="tracking-widest">HappyAgency</span>
+              <img src="assets\icons\instagram.svg" />
+            </a>
+          </div>
+        </div>
       </section>
-<div class="h-[100px]"></div>
+      <div class="h-[100px]"></div>
     </main>
+    <footer class="flex flex-col gap-6 justify-center items-center py-4 border-t border-solid border-[#042FF8] w-full md:flex-row md:justify-between md:px-16">
+      <p class="hidden text-[32px] text-[#042FF8] tracking-widest md:block">DESIGN TODAY</p>
+      <p class="text-[16px] text-[#042FF8]">© تمامی حقوق طراحی این سایت محفوظ است.</p>
+      <div class="flex flex-row-reverse gap-6">
+        <a href="#" class="icon-a flex justify-center items-center rounded-full bg-[#EEF1FF] w-10 h-10"><img src="assets\icons\instagram-logo.svg" alt="instagram-logo" class="filter w-5 h-5" /></a>
+        <a href="#" class="icon-a flex justify-center items-center rounded-full bg-[#EEF1FF] w-10 h-10"><img src="assets\icons\telegram.svg" alt="telegram-logo" class="filter w-5 h-5" /></a>
+        <a href="#" class="icon-a flex justify-center items-center rounded-full bg-[#EEF1FF] w-10 h-10"><img src="assets\icons\whatsapp.svg" alt="whatsapp-logo" class="filter w-5 h-5" /></a>
+      </div>
+    </footer>
     <script src="package\swiper-bundle.min.js"></script>
 
     <script>
