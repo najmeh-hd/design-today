@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   },
 // });
 
-const targetTimestamp = 1751121000000;
+const targetTimestamp = new Date(2026, 10, 15, 23, 59, 59).getTime();
 function toPersianDigits(str) {
   return str.toString().replace(/\d/g, d => "۰۱۲۳۴۵۶۷۸۹"[d]);
 }
