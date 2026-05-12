@@ -18,6 +18,7 @@
   "homepage": "https://github.com/najmeh-hd/design-today#readme",
   "description": "",
   "dependencies": {
+    "@fontsource/vazirmatn": "^5.2.8",
     "@tailwindcss/cli": "^4.1.6"
   },
   "devDependencies": {
